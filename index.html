@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- puede estar en minúscula y en mayúscula -->
+<html lang="es"> <!-- ponemos que nuestro documento estará en español, solo puedo tener un idioma -->
+<!-- si queremos varios idiomas debemos dividirlos en dominios o subdominios, NUNCA en subcarpetas -->
+<!-- porque google indexa sitios por idiomas por dominios o subdominios, mejor comprar un dominio por idioma -->
+<head>
+<meta charset="utf-8" /> <!-- slash de cierre, es buena práctica el colocarlos -->
+	<title>Aplicación Front-End: Red social</title>
+	<link rel="stylesheet" href="css/videoresponsive.css" />
+	<link rel="stylesheet" href="css/normalize.css" /> <!-- tiene que ir encima del de nuestro código normal, sirve para resetear todos los estilos -->
+	<link rel="stylesheet" href="css/videoresponsive.css" /> <!-- el type="text/css" podría ponerse pero por defecto solo existe un estilo de css, por lo que es redundante ponerlo, buena práctica -->
+</head>
+<body><!-- lo principal es usar las etiquetas semánticas, header, footer, section, articles...etc -->
+<!-- los div son divisiones, es decir, si en una cabecera tenemos un titulo, una imagen, un boton y algún otro elemento, esos espacios arriba o abajo, derecha o izquierda, son divisiones visuales, ahí se utilizan los div -->
+<header>
+<h1>Videos Responsive</h1>
+</header>
+
+<div id="wrapper">
+	<div class="col1">
+		<h1>Columna nueva</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="col2">
+		<h2>Aprendiendo Stylus y Videos responsive</h2>
+		<div class="contenedor">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/De4p5gq8n1g" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<footer>
+	<!-- CSS orientada a objetos, en vez de usar "id", usamos "clases" para tratar cada elemento como una objeto y cada clase sean sus propiedades, los "id" los reservamos paramodificar el objeto por javascript -->
+	<h3>
+		<strong>Powered by Alfredoll </strong>
+		<span class="creado">
+			2016
+		</span>
+	</h3>
+</footer>
+</body>
+</html>

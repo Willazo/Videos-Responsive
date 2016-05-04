@@ -1,0 +1,58 @@
+/*Permite uso de variables*/
+/* no es necesario añadir puntos, puntos y coma, dos puntos ni llaves, lo interpreta*/
+body {
+/*background leonidas*/
+  background: #e8e8e8;
+  color: #444;
+  font-family: Arial;
+  font-size: 16px;
+}
+header {
+  background: #444;
+  color: #fff;
+/* en lo que se refiere a márgenes es mejor usar "em" que "px"*/
+/* porque el tamaño se vuelve relativo a la fuente, a que sea relativo a un número arbitrario como px*/
+  padding: 0.5em /* 1em equivale al tamaño de la fuente más cercana, en este un tamaño de 16px */;
+}
+header #wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+/*esto es para añadir dos columnas*/
+.col1,
+.col2 {
+  width: 50%;
+  float: left;
+  background: #fff;
+}
+.contenedor {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+/*para dar soporte a los diferentes tipos de video que existen de inserción */
+.contenedor iframe,
+.contenedor object,
+.contenedor embed,
+.contededor video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+/* con esta media hacemos que cuando se reduce la pantalla siendo dos columnas*/
+/* el video y su texto se añada debajo de la primera columna*/
+}
+@media screen and (max-width: 1000px) {
+  .col1,
+  .col2 {
+    width: auto;
+    background: #fff;
+  }
+}
+footer {
+  background: #22bce0;
+  color: #fff;
+}
